@@ -1,0 +1,93 @@
+/*	my stylesheet */
+
+footer {
+	position: sticky;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #81b5b2;
+	color: white;
+	text-align: center;
+}
+
+.center {
+	text-align:center;
+}
+
+.center_italics {
+	text-align:center;
+	font-style: italic;
+}
+
+.responsive {
+	width:100%;
+	height:auto;
+}
+
+.navbar #topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#topnav li {float: left;}
+
+#topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#topnav li a:hover:not(.active) {background-color: #111;}
+
+#topnav li a.active {background-color: #81b5b2;}
+
+#topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+	#topnav li.right, 
+	#topnav li {float: none;}
+}
+
+@media screen and (min-width: 800px) {
+	.about {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contact {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.about #mytable , td, th {
+	/*border: 1px solid #595959;	Remove this when adding things - black borders */
+	border-collapse: collapse;
+	width: 100%;
+}
+#mytable td, th {
+	padding: 3px;
+	width: 30px;
+	height: 25px;
+}
+#mytable th {
+	background: #f0e6cc;
+}
+
+.about #cv_links, td, th {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.spacer {
+	font-size: 0; 
+    height: 20px;
+    line-height: 0;
+}
