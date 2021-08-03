@@ -1,13 +1,27 @@
 /*	my stylesheet */
 
+body {
+	font-family: Helvectia, sans-serif;
+}
+
 footer {
-	position: sticky;
-	left: 0;
-	bottom: 0;
 	width: 100%;
 	background-color: #81b5b2;
 	color: white;
 	text-align: center;
+}
+
+.button {
+	border: none;
+	color: black;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 .center {
@@ -22,6 +36,11 @@ footer {
 .responsive {
 	width:100%;
 	height:auto;
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
 }
 
 .navbar #topnav {
@@ -60,8 +79,14 @@ footer {
 		margin-right: auto;
 	}
 	
-	.contact {
+	.projects {
 		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contact {
+		max-width: 500px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -72,13 +97,11 @@ footer {
 	border-collapse: collapse;
 	width: 100%;
 }
+
 #mytable td, th {
-	padding: 3px;
+	padding: 10px;
 	width: 30px;
 	height: 25px;
-}
-#mytable th {
-	background: #f0e6cc;
 }
 
 .about #cv_links, td, th {
@@ -86,8 +109,35 @@ footer {
 	width: 100%;
 }
 
+.projects #projects_table td, th {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#projects_table td {
+	padding: 2.5%;
+	max-width: 20%;
+}
+
+.contact #contact_table td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#contact_table td, th {
+	width: auto;
+	height: 25px;
+}
+
 .spacer {
 	font-size: 0; 
     height: 20px;
+    line-height: 0;
+}
+
+.bigspacer {
+	font-size: 0; 
+    height: 2000px;
     line-height: 0;
 }
