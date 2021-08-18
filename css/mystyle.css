@@ -153,15 +153,45 @@ img{
 	font-weight: bold;
 }
 
+/*Projects*/
+.projects-head img{
+	width:250px;
+	justify-self: flex-end;
+}
+
+.projects-head .grid {
+	grid-template-columns: 67% 33%;
+}
+
+/*Work experience*/
+.work-head img{
+	width:250px;
+	justify-self: flex-end;
+}
+
+.work-head .grid {
+	grid-template-columns: 67% 33%;
+}
+
 /*footer*/
-.footer .social. a{
+.footer .social a{
 	margin: 0 10px;
+}
+
+.bottom {
+	position: fixed;
+	margin-bottom:0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 /*Tablet Devices*/
 @media(max-width: 768px){
 	.grid,
 	.about .grid,
+	.projects-head .grid,
+	.work-head .grid,
 	.stats .grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
