@@ -1,116 +1,120 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="mystyle.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="css/utilities.css">
 	<title>About Me</title>
-	
 </head>
-<body id="responsive_body">
-
-<div class="navbar" id="site_navbar">
-	<ul id="topnav">
-		<li><a class="active" href="#site_about">About</a></li>
-		<li><a href="#site_projects">Projects</a></li>
-		<li><a href="#site_contact">Contact</a></li>
-	</ul>
-</div>
-
-<div class="image_header">
-	<img src="polly-background-1631651.jpg" alt="Temporary header image" class="responsive">
-</div>
-
-<div class="spacer">
-</div>
-
-<div class="about" id="site_about">
-	<h3 class="center">About Me</h3>
-	<p class="center_italics">Computer Science with AI student, Loughborough university</p>
-	<p>Second year student from London who is into skateboarding and a career in software development. My main areas of interest are the deployment of software, the implementation of AI to improve the efficiency of existing computers as well as the use of big data in everyday life.</p>
-	<p>Ability to develop in Python, Java, HTML, Javascript, CSS, PHP, C# along with a strong understanding of the OOP paradigm. I also have previously worked with vb.net and SQL. Currently also learning APEX development.</p>
-	<table id="mytable">
-	<tbody>
-		<tr>
-			<td><img src="sqr1.jpg" alt="Image of me" class="responsive"></td>
-			<td>
-				<table id="cv_links">
-					<tbody>
-						<tr>
-							<!--<td><p>My CV can be found <a href="https://drive.google.com/file/d/1voRNoH1mCc_48aZab4HeyI_c3PadXYOP/view?usp=sharing">here<a/></p></td>-->
-							<td>
-								<a href="https://drive.google.com/file/d/1voRNoH1mCc_48aZab4HeyI_c3PadXYOP/view?usp=sharing">
-									<button id="button_view_cv">
-										<table>
-											<tbody>
-												<tr>
-													<td><img src="view_symbol.png" alt="View CV" class="icon"></td>
-													<td class="button_cvText">View my CV</td>
-												</tr>
-											</tbody>
-										</table>
-									</button>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<td><p>links</p></td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-	</tbody>
-	</table>
-</div>
-
-<div class="spacer">
-</div>
-
-<div class="projects" id="site_projects">
-	<h3 class="center">My Projects</h3>
-	<p class="center">I plan to keep this section updated with my ongoing projects!</p>
-	<table id="projects_table">
-		<tbody>
-			<tr>
-				<td><img src="update_soon.jpg" alt="Coming soon" class="responsive"></td>
-				<td><img src="update_soon.jpg" alt="Coming soon" class="responsive"></td>
-				<td><img src="update_soon.jpg" alt="Coming soon" class="responsive"></td>
-				<td><img src="update_soon.jpg" alt="Coming soon" class="responsive"></td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="spacer">
-</div>
-
-<div class="contact" id="site_contact">
-	<h3 class="center">Contact Me</h3>
-	<p class="center_italics">If you are interested to find out more about me, drop me a message!</p>
-	<table id="contact_table">
-		<tbody>
-			<tr>
-				<td><img src="location_sym.png" alt="Location" class="icon"></td>
-				<td>London, UK // Loughborough, UK</td>
-			</tr>
-			<tr>
-				<td><img src="email_sym.png" alt="Email" class="icon"></td>
-				<td>alanwuu2002@gmail.com</td>
-			</tr>
-			<tr>
-				<td><img src="phone_sym.png" alt="Phone" class="icon"></td>
-				<td>+44 74000 066433</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
+<body>
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container flex">
+			<h1 class="logo">Alan Wu</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="workHistory.html">Work History</a></li>
+				</ul>
+			<nav>
+		</div>
+	</div>
+	
+	<!-- about section -->
+	<section class="about">
+		<div class="container grid">
+			<div class="about-text">
+				<h1>About Me</h1>
+				<p class="center_italics">Computer Science with AI student, Loughborough university</p>
+				<p>I am a Second year student on a four year sandwich course from London who is into skateboarding and a career in software development. My main areas of interest are the deployment of software, the implementation of AI to improve the efficiency of existing computers as well as the use of big data in everyday life.</p>
+				<p>Ability to develop in Python, Java, HTML, Javascript, CSS, PHP, C# along with a strong understanding of the OOP paradigm. I also have previously worked with vb.net and SQL. Currently also learning APEX development.</p>
+			</div>
+			
+			<div class="contact-form card">
+				<h2>Contact me</h2>
+				<form>
+					<div class="form-control">
+						<input type="text" name="name" placeholder="Name" required>
+					</div>
+					<div class="form-control">
+						<input type="text" name="organisation" placeholder="Organisation Name" required>	
+					</div>
+					<div class="form-control">
+						<input type="email" name="email" placeholder="Email" required>				
+					</div>
+					<div class="form-control">
+						<!--	<input type="text" name="message" placeholder="Your Message" required>	-->
+						<textarea id="message" name="message" placeholder="Your Message" style="height:155px";></textarea>						
+					</div>
+					<input type="submit" value="Send" class="btn btn-primary">
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<!-- relevant modules -->
+	<section class="stats">
+		<div class="container">
+			<h3 class="state-heading text-center my-1">
+				University Module Performance
+			</h3>
+			<p class="text-center">Here are some of my results for coding related modules from my first year of studies</p>
+			<div class="grid grid-3 text-center my-4">
+				<div>
+					<h3>70%</h3>
+					<p>Web Programming</p>
+					<p>HTML, CSS, PHP, Javascript</p>
+				</div>
+				<div>
+					<h3>85%</h3>
+					<p>Object Orientated Programmming</p>
+					<p>Java</p>
+				</div>
+				<div>
+					<h3>71%</h3>
+					<p>Embedded Systems Programmming</p>
+					<p>C# (Arduino)</p>
+				</div>
+			</div>
+			<div class="grid text-center my-4">
+				<div>
+					<h3>76%</h3>
+					<p>Functional Programmming</p>
+					<p>Haskell</p>
+				</div>
+				<div>
+					<h3>82%</h3>
+					<p>Python Programmming</p>
+					<p>Python</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<footer class="footer bg-dark py-5">
+		<div class="container grid grid-3">
+			<div>
+				<h1>Alan Wu | About</h1>
+				<a href="https://drive.google.com/file/d/1voRNoH1mCc_48aZab4HeyI_c3PadXYOP/view">View my CV</a>
+				<p>London, UK</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="workHistory.html">Work History</a></li>
+				</ul>
+			</nav>
+			<div class="social">
+				<a href="https://github.com/AlanWu888"><i class="fab fa-github fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/alan-wu-7252601b3/"><i class="fab fa-linkedin fa-2x"></i></a>
+				<a href="https://trailblazer.me/id/alanwu888"><i class="fab fa-salesforce fa-2x"></i></a>
+			</div>
+		</div>
+	</footer>
 </body>
-
-<footer>
-<p>Back to the <a href="#site_navbar">top</a> of the page</p>
-<p>Alan Wu © 2021</p>
-</footer>
-</html>
+<html>
