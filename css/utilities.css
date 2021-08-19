@@ -5,6 +5,20 @@
 	padding: 0 40px;
 }
 
+.container-hideY {	/*hides vertical scroll bar on animations*/
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow-y: hidden;
+	padding: 0 40px;
+}
+
+.container-hideX {	/*hides horizontal scroll bar on animations*/
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	padding: 0 40px;
+}
+
 .btn {
 	display: inline-block;
 	padding: 10px 30px;

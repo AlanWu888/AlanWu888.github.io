@@ -95,12 +95,17 @@ img{
 	gap: 30px;
 }
 
+.about-text{
+	animation: slideInFromLeft 1s ease-in;
+}
+
 .contact-form {
 	position: relative;
 	top: 60px;
 	height: 400px;
 	padding: 40px;
 	z-index: 100;
+	animation: slideInFromRight 1s ease-in;
 	/*justify-self: flex-end;*/
 }
 
@@ -137,6 +142,11 @@ img{
 /*Stats*/
 .stats {
 	padding-top: 150px;
+	overflow: hidden;
+}
+
+.stats-animation {
+	animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -153,24 +163,25 @@ img{
 	font-weight: bold;
 }
 
-/*Projects*/
-.projects-head img{
-	width:250px;
-	justify-self: flex-end;
-}
+/*Subpage headers*/
 
-.projects-head .grid {
-	grid-template-columns: 67% 33%;
-}
+
+
+/*Projects*/
+
 
 /*Work experience*/
-.work-head img{
+.subpage-head img{
 	width:250px;
 	justify-self: flex-end;
 }
 
-.work-head .grid {
+.subpage-head .grid {
 	grid-template-columns: 67% 33%;
+}
+
+.subpage-head i {
+	justify-self: flex-end;
 }
 
 /*footer*/
@@ -185,6 +196,48 @@ img{
 	right: 0;
 	bottom: 0;
 }
+
+/*Animations*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(+100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(+100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
 
 /*Tablet Devices*/
 @media(max-width: 768px){
