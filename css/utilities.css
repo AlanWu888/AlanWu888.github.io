@@ -53,10 +53,14 @@ img{
 		text-align: center;
 		margin-top: 40px;
 	}
+	
+	.work ul {
+		font-size: 14px;
+	}
 }
 
 /*Moile Devices*/
-@media (max-width: 500px) {
+@media (max-width: 530px) {
 	.navbar {
 		height: 110px;
 	}

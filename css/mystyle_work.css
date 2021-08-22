@@ -43,11 +43,11 @@
 	border-top: 1px solid black;
 	margin-left: 7%;
 	margin-right: 7%;
-	/*list-style-type: square;*/
+	list-style-type: square;
 }
 
 .work{
-	height: 660px;
+	height: auto;
 	background-color: var(--primary-colour);
 	color: #fff;
 	position: relative;
