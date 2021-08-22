@@ -1,3 +1,76 @@
+/* style resets */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
+
+ul {
+	list-style-type: none;	/*removes bullet points*/
+}
+
+a {
+	text-decoration: none;	/*removes underline on links*/
+	color: #333;
+}
+
+h1, h2 {
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+
+p{
+	margin: 10px 0;
+}
+
+img{
+	width: 100%
+}
+
+/*Tablet Devices*/
+@media(max-width: 768px){
+	.grid,
+	.about .grid,
+	.projects-head .grid,
+	.work-head .grid,
+	.stats .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	
+	.about {
+		height: auto;
+	}
+	
+	.about-text {
+		text-align: center;
+		margin-top: 40px;
+	}
+}
+
+/*Moile Devices*/
+@media (max-width: 500px) {
+	.navbar {
+		height: 110px;
+	}
+	
+	.navbar .flex {
+		flex-direction: column;
+	}
+	
+	.navbar ul {
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -62,6 +135,12 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-work {
+	grid-template-columns: 33% 67%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
 .card {
 	background-color: #fff;
 	color: #333;
@@ -69,6 +148,10 @@
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	margin: 10px;
+}
+
+.card-work {
+	padding: 10px;
 }
 
 /*bg and coloured buttons*/
@@ -90,6 +173,33 @@
 .bg-dark, .btn-dark{
 		background-color: var(--fourth-colour);
 		color: #333;
+}
+
+/*Subpage headers*/
+.subpage-head img{
+	width:250px;
+	justify-self: flex-end;
+}
+
+.subpage-head .grid {
+	grid-template-columns: 67% 33%;
+}
+
+.subpage-head i {
+	justify-self: flex-end;
+}
+
+/*footer*/
+.footer .social a{
+	margin: 0 10px;
+}
+
+.bottom {
+	position: fixed;
+	margin-bottom:0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 /*Margins*/

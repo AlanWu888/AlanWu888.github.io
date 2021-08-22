@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+	--primary-colour: #81b5b2;
+	--secondary-colour: #1c3fa8;
+	--third-colour: #002240;
+	--fourth-colour: #f4f4f4;
+}
+
+/*Navbar*/
+.navbar {
+	background-color: var(--primary-colour);
+	color: #fff;
+	height: 70px;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar a {
+	color: #fff;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.navbar a:hover {
+	border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+	justify-content: space-between;
+}
+
+/*About*/
+.center_italics {
+	text-align:center;
+	font-style: italic;
+}
+
+.about {
+	height: 450px;
+	background-color: var(--primary-colour);
+	color: #fff;
+	position: relative;
+}
+
+.about h1 {
+	font-size: 40px;
+}
+
+.about p {
+	margin: 20px 0;
+}
+
+.about .grid{
+	overflow: visible;
+	grid-template-columns: 67% 33%;
+	gap: 30px;
+}
+
+.about-text{
+	animation: slideInFromLeft 1s ease-in;
+}
+
+.contact-form {
+	position: relative;
+	top: 60px;
+	height: 400px;
+	padding: 40px;
+	z-index: 100;
+	animation: slideInFromRight 1s ease-in;
+	/*justify-self: flex-end;*/
+}
+
+.contact-form .form-control {
+	margin: 10px 0;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], textarea{
+	border: 0;
+	border-bottom: 1px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	resize: none;
+}
+
+.contact-form input:focus, textarea:focus {
+	outline: none;
+}
+
+.about::before, .about::after {
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -50px;
+	right: 0;
+	left: 0;
+	background: #fff;
+	transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	-moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+}
+
+/*Stats*/
+.stats {
+	padding-top: 150px;
+	overflow: hidden;
+}
+
+.stats-animation {
+	animation: slideInFromBottom 1s ease-in;
+}
+
+.stats-heading {
+	max-width: 500px;
+	margin: auto;
+}
+
+.stats .grid h3 {
+	font-size: 25px;
+}
+
+.stats .grid p {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*Animations*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(+100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(+100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
