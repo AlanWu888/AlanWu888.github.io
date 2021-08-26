@@ -35,9 +35,22 @@ img{
 }
 
 /*Tablet Devices*/
+@media(max-width: 910px){
+	.card-project{
+		height: 350px;
+	}
+}
+
+@media(max-width: 850px){
+	.card-project{
+		height: 400px;
+	}
+}
+
 @media(max-width: 768px){
 	.grid,
 	.about .grid,
+	.projects .grid,
 	.projects-head .grid,
 	.work-head .grid,
 	.stats .grid {
@@ -45,7 +58,8 @@ img{
 		grid-template-rows: 1fr;
 	}
 	
-	.about {
+	.about,
+	.card-project {
 		height: auto;
 	}
 	
@@ -204,6 +218,47 @@ img{
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+
+/*Animations*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(+100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(+100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
 }
 
 /*Margins*/

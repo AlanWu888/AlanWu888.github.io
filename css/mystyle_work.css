@@ -53,6 +53,10 @@
 	position: relative;
 }
 
+.work .container {
+	animation: slideInFromBottom 1s ease-in;
+}
+
 .work-spacer {
 	padding-top: 550px;
 }

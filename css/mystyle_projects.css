@@ -38,10 +38,14 @@
 
 /*Projects*/
 .projects{
-	height: 250px;
+	height: auto;
 	background-color: var(--primary-colour);
 	color: #fff;
 	position: relative;
+}
+
+.projects a:hover {
+	font-weight: bold;
 }
 
 .projects p, h1, h2{
@@ -64,4 +68,9 @@
 
 .projects .container {
 	padding-top: 30px;
+	animation: slideInFromBottom 1s ease-in;
+}
+
+.card-project {
+	height: 300px;
 }
