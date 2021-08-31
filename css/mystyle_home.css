@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+	--primary-colour: #81b5b2;
+	--secondary-colour: #1c3fa8;
+	--third-colour: #002240;
+	--fourth-colour: #f4f4f4;
+}
+
 /*Navbar*/
 .navbar {
 	background-color: var(--primary-colour);
@@ -122,3 +131,43 @@
 	font-weight: bold;
 }
 
+/*Animations*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(+100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(+100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
