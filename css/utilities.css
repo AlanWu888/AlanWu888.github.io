@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+	--primary-colour: #81b5b2;
+	--secondary-colour: #1c3fa8;
+	--third-colour: #002240;
+	--fourth-colour: #f4f4f4;
+}
+
 /* style resets */
 *{
 	box-sizing: border-box;
@@ -87,6 +96,35 @@ img{
 		padding: 10px;
 		background-color: rgba(0, 0, 0, 0.1);
 	}
+}
+
+/*Navbar*/
+.navbar {
+	background-color: var(--primary-colour);
+	color: #fff;
+	height: 70px;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar a {
+	color: #fff;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.navbar a:hover {
+	border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+	justify-content: space-between;
+}
+
+.navbar .active {
+	font-weight: bold;
 }
 
 .container {
@@ -220,6 +258,10 @@ img{
 	bottom: 0;
 }
 
+.footer ul a:hover{
+	font-weight: bold;
+}
+
 /*Animations*/
 @keyframes slideInFromLeft {
 	0% {
@@ -259,6 +301,16 @@ img{
 	100% {
 		transform: translateY(0);
 	}
+}
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /*Margins*/

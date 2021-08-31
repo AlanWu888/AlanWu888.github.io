@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VFCQQ6MW43"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VFCQQ6MW43"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-  gtag('config', 'G-VFCQQ6MW43');
-</script>
+		gtag('config', 'G-VFCQQ6MW43');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/mystyle_work.css">
 	<link rel="stylesheet" href="css/utilities.css">
-	<title>About Me</title>
+	<title>My Experiences</title>
 </head>
 <body>
 	<!-- navbar -->
@@ -27,7 +26,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="workHistory.html">Work History</a></li>
+					<li class="active"><a href="workHistory.html">History</a></li>
 					<li><a href="https://drive.google.com/file/d/1voRNoH1mCc_48aZab4HeyI_c3PadXYOP/view">CV</a></li>
 				</ul>
 			<nav>
@@ -38,8 +37,8 @@
 	<section class="subpage-head bg-primary py-3">
 		<div class="container grid">
 			<div>
-				<h1 class="xl">Work History</h1>
-				<p class="lead">This section includes some details of previous work experience</p>
+				<h1 class="xl">History</h1>
+				<p class="lead">This section includes some details of previous employment, education and volunteering experiences</p>
 			</div>
 			<i class="far fa-building fa-7x"></i>
 			<!--<img src="images/work.png" alt="Employment icon">-->
@@ -47,7 +46,17 @@
 	</section>
 	
 	<!-- contents -->
-	<section class="work">
+	<!-- Tab links -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Work')" id="defaultOpen">Employment</button>
+		<button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+		<button class="tablinks" onclick="openTab(event, 'Volunteering')">Volunteering</button>
+	</div>
+	
+	<div class="blue_spacer"></div>
+
+	<!-- Tab content -->
+	<div id="Work" class="tabcontent">
 		<div class="container">
 			<div class="card card-work">
 				<div class="grid grid-work">
@@ -125,10 +134,168 @@
 				</ul>
 			</div>
 		</div>
-	</section>
-	
+	</div>
 
+	<div id="Education" class="tabcontent">
+		<div class="container">
+			<div class="card card-work">
+				<div class="grid grid-work">
+					<div class="card-heading">
+						<ul>
+						<li>September 2013 - June 2018</li>
+						<li style="color:#fff">.</li>
+						<li style="color:#fff">.</li>
+						</li>
+					</div>
+					<div class="card-heading">
+						<ul>
+							<li>Evelyn Grace Academy</li>
+							<li>Brixton, London, UK</li>
+							<li>12 GCSEs</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="work-info">
+					<li>Grade A/A* [10]</li>
+					<li>Grade B [1]</li>
+					<li>Grade C [1]</li>
+				</ul>
+			</div>
+		</div>
 	
+		<div class="container">
+			<div class="card card-work">
+				<div class="grid grid-work">
+					<div class="card-heading">
+						<ul>
+						<li>August 2018 - June 2020</li>
+						<li style="color:#fff">.</li>
+						<li style="color:#fff">.</li>
+						</li>
+					</div>
+					<div class="card-heading">
+						<ul>
+							<li>Ashcroft Technology Academy</li>
+							<li>Putney, London, UK</li>
+							<li>A Levels + AS Levels</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="work-info">
+					<li>Maths [A*]</li>
+					<li>Computer Science [A]</li>
+					<li>Chemistry [A]</li>
+					<li>Biology AS [C]</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="card card-work">
+				<div class="grid grid-work">
+					<div class="card-heading">
+						<ul>
+						<li>September 2020 - Present</li>
+						<li style="color:#fff">.</li>
+						<li style="color:#fff">.</li>
+						</li>
+					</div>
+					<div class="card-heading">
+						<ul>
+							<li>Loughborough University</li>
+							<li>Loughborough, Leicestershire, UK</li>
+							<li>BSc Computer Science and Artificial Intelligence</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="work-info">
+					<li>Sandwich course, third year will be in industry</li>
+					<li>2:1 First year Result</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="Volunteering" class="tabcontent">
+	
+		<div class="container">
+			<div class="card card-work">
+				<div class="grid grid-work">
+					<div class="card-heading">
+						<ul>
+						<li>November 2018 - March 2019</li>
+						<li style="color:#fff">.</li>
+						<li style="color:#fff">.</li>
+						</li>
+					</div>
+					<div class="card-heading">
+						<ul>
+							<li>Year 11 Maths Mentor</li>
+							<li>Ashcroft Technology Academy</li>
+							<li>Putney, London, UK</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="work-info">
+					<li>Took part in weekly maths mentoring sessions to assist my school’s Year 11 students with GCSE math questions</li>
+					<li>Strengthened interpersonal skills from building connections with teachers and younger students</li>
+					<li>Heightened responsibility as it was up to me to turn up to the weekly sessions</li>
+					<li>Improved time organisation to balance schoolwork around mentoring session attendance</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="card card-work">
+				<div class="grid grid-work">
+					<div class="card-heading">
+						<ul>
+						<li>November 2018 - February 2020</li>
+						<li style="color:#fff">.</li>
+						<li style="color:#fff">.</li>
+						</li>
+					</div>
+					<div class="card-heading">
+						<ul>
+							<li>STEAM Ambassador</li>
+							<li>Ashcroft Technology Academy</li>
+							<li>Putney, London, UK</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="work-info">
+					<li>As a STEAM ambassador I assist teachers to run clubs under STEAM subjects (Science, Technology, Engineering, Arts and Maths) for the younger students in my school</li>
+					<li>Strengthened organisation of time in order to balance school work around club attendances</li>
+					<li>Strengthened interpersonal skills where I was able to build connections with younger pupils</li>
+					<li>Heightened responsibilities as an ambassador for the STEAM subjects</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script>
+		function openTab(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		
+		tablinks = document.getElementsByClassName("tablinks");
+		
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
 	
 	<!-- footer -->
 	<footer class="footer bg-dark py-5">
@@ -141,7 +308,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="workHistory.html">Work History</a></li>
+					<li><a href="workHistory.html">History</a></li>
 					<li><a href="https://drive.google.com/file/d/1voRNoH1mCc_48aZab4HeyI_c3PadXYOP/view">View my CV</a></li>
 				</ul>
 			</nav>
