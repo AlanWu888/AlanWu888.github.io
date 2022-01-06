@@ -43,7 +43,7 @@
 /*Projects*/
 .projects{
 	height: auto;
-	background-color: var(--primary-colour);
+	background-color: #fff;
 	color: #fff;
 	position: relative;
 }
@@ -71,7 +71,7 @@
 }
 
 .projects .container {
-	padding-top: 30px;
+	padding-top: 15px;
 	animation: fadeEffect 2s;
 }
 
