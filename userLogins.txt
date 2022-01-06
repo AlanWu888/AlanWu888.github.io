@@ -1,0 +1,7 @@
+Operator login:
+	username:	alice
+	password:	Password1
+	
+Specialist login:
+	username:	clara
+	password:	Password1
