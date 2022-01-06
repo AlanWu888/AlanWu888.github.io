@@ -78,7 +78,7 @@
 			<div class="card card-project">
 				<h2><a href="https://github.com/akinolajaye/Team09module">Online helpdesk [Prototype]</a></h2>
 				<h1>HTML / CSS / Bootstrap / JavaScript</h1>
-				<p>Team project - <a href="userLogins.txt">Login details</a></p>
+				<p>Team project - <a href="userLogins.txt" target="_blank">Login details</a></p>
 				<p>Team Project prototype of an intranet helpdesk to be used internally in a fictional company, Make-it-all</p>
 			</div>
 		</div>
