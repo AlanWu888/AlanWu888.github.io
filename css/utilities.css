@@ -71,6 +71,10 @@ img{
 	.work ul {
 		font-size: 14px;
 	}
+
+	.subpage-head i {
+    font-size: 4em;
+  }
 }
 
 /*Moile Devices*/
@@ -208,6 +212,10 @@ img{
 }
 
 /*footer*/
+.footer {
+	margin-top: 20px;
+}
+
 .footer .social a{
 	margin: 0 10px;
 }
