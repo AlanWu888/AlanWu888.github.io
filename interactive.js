@@ -267,7 +267,7 @@ function animate() {
           rect1: player,
           rect2: battleZone
         }) && overlappingArea > (player.width * player.height) / 2 
-      && Math.random() < 0.01)
+      && Math.random() < 0.1)
       {
         // enter battle
         window.cancelAnimationFrame(animationId)
