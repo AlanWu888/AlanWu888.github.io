@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Interactive</title>
+    <link rel="stylesheet" type="text/css" href="interactive-styles.css">
+  </head>
+  <body>
+    <div style="display: inline-block; position: relative;">
+      <div id="overlappingDiv" style="background-color: black; position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0; pointer-events: none;">
+
+      </div>
+      <canvas>
+
+      </canvas>
+      <div style="margin-top: 300px;">
+        <div id="mobileControls" style="display: none;">
+          <div class="dpad">
+            <button id="upButton" class="vertical"></button>
+            <button id="rightButton" class="horizontal"></button>
+            <button id="downButton" class="vertical"></button>
+            <button id="leftButton" class="horizontal"></button>
+            <div class="dpad-center"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="data/collision_boundary.js"></script>
+    <script src="data/battle_zones.js"></script>
+    <script src="data/house1.js"></script>
+    <script src="data/house2.js"></script>
+    <script src="data/house3.js"></script>
+    <script src="data/house4.js"></script>
+    <script src="classes.js"></script>
+    <script src="interactive.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+canvas {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 30px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  canvas {
+    margin-top: 200px;
+  }
+}
+
+#mobileControls {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.dpad {
+  border-radius: 50%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.dpad button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+}
+
+.dpad-center {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#upButton,
+#downButton {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 70px;
+}
+
+#upButton {
+  top: 0;
+}
+
+#downButton {
+  bottom: 0;
+}
+
+#leftButton,
+#rightButton {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 50px;
+}
+
+#leftButton {
+  left: 0;
+}
+
+#rightButton {
+  right: 0;
+}
