@@ -2,6 +2,7 @@
   <head>
     <title>Interactive</title>
     <link rel="stylesheet" type="text/css" href="interactive-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div style="display: inline-block; position: relative;">
@@ -11,18 +12,32 @@
       <canvas>
 
       </canvas>
-      <div style="margin-top: 300px;">
-        <div id="mobileControls" style="display: none;">
-          <div class="dpad">
-            <button id="upButton" class="vertical"></button>
-            <button id="rightButton" class="horizontal"></button>
-            <button id="downButton" class="vertical"></button>
-            <button id="leftButton" class="horizontal"></button>
-            <div class="dpad-center"></div>
+      <div class="controls" id="mobileControls">
+        <div class="wrapper dpad" >
+          <div class="center dpad">
+              <div class="center-circle dpad"></div>
+          </div>
+          
+          <div class="up direction dpad" id="upButton">
+            <div class="up-triangle dpad"></div>
+          </div>
+        
+          <div class="right direction dpad" id="rightButton">
+            <div class="right-triangle dpad"></div>
+          </div>
+          <div class="down direction dpad" id="downButton">
+            <div class="down-triangle dpad"></div>
+          </div>
+        
+          <div class="left direction dpad" id="leftButton">
+            <div class="left-triangle dpad"></div>
           </div>
         </div>
+        <div class="buttons">
+          <div>A</div>
+          <div>B</div>
+        </div>
       </div>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

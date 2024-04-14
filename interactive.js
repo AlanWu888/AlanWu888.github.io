@@ -4,11 +4,11 @@ function isTouchDevice() {
 
 const mobileControls = document.getElementById('mobileControls');
 
-if (isTouchDevice()) {
-  mobileControls.style.display = 'flex';
-} else {
-  mobileControls.style.display = 'none';
-}
+// if (isTouchDevice()) {
+//   mobileControls.style.display = 'flex';
+// } else {
+//   mobileControls.style.display = 'none';
+// }
 
 const upButton = document.getElementById('upButton');
 const downButton = document.getElementById('downButton');
@@ -26,7 +26,7 @@ canvas.width=1024
 canvas.height=576
 
 const offset = {
-  x: -544,
+  x: -592,
   y: -460
 }
 
@@ -267,7 +267,7 @@ function animate() {
           rect1: player,
           rect2: battleZone
         }) && overlappingArea > (player.width * player.height) / 2 
-      && Math.random() < 0.1)
+      && Math.random() < 0.01)
       {
         // enter battle
         window.cancelAnimationFrame(animationId)
