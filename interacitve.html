@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Interactive</title>
+    <link rel="stylesheet" type="text/css" href="interacitve-style.css">
+  </head>
+  <body>
+    <div style="display: inline-block; position: relative;">
+      <div id="overlappingDiv" style="background-color: black; position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0; pointer-events: none;">
+
+      </div>
+      <canvas>
+
+      </canvas>
+      <div class="controls" id="mobileControls">
+        <div class="wrapper dpad" >
+          <div class="center dpad">
+              <div class="center-circle dpad"></div>
+          </div>
+          
+          <div class="up direction dpad" id="upButton">
+            <div class="up-triangle dpad"></div>
+          </div>
+        
+          <div class="right direction dpad" id="rightButton">
+            <div class="right-triangle dpad"></div>
+          </div>
+          <div class="down direction dpad" id="downButton">
+            <div class="down-triangle dpad"></div>
+          </div>
+        
+          <div class="left direction dpad" id="leftButton">
+            <div class="left-triangle dpad"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div>A</div>
+          <div>B</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="data/collision_boundary.js"></script>
+    <script src="data/battle_zones.js"></script>
+    <script src="data/house1.js"></script>
+    <script src="data/house2.js"></script>
+    <script src="data/house3.js"></script>
+    <script src="data/house4.js"></script>
+    <script src="classes.js"></script>
+    <script src="interacitve.js"></script>
+  </body>
+</html>
+
+
